@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step Into Style - Court Heels</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #f8cdda, #1d2b64);
+        color: #fff;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 1.8em;
+        margin-top: 20px;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: bottom;
+        margin: 0 auto 20px;
+        border-radius: 8px;
+      }
+      p {
+        font-size: 1.1em;
+      }
+      a {
+        color: #ffd1dc;
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        padding: 12px 24px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #444;
+      }
+      hr {
+        border: 1px solid #ccc;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Step Into Style</h1>
+      <hr />
+      <h2>Especially Court Heels</h2>
+      <img src="challenge image.avif"Court Heels" />
+      <p>
+        <strong>Court heels</strong> are the perfect blend of elegance and
+        comfort. <em>These timeless shoes</em> add a touch of sophistication to
+        any outfit. <br />
+        Whether you're heading to the office or a night out, court heels have
+        got you covered!
+      </p>
+      <p>
+        They come in various
+        <span style="color: #ffd700; font-weight: bold"
+          >colors, materials, and heel heights</span
+        >
+        — so you can find your perfect fit.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Court_shoe" target="_blank"
+        >Read more on Wikipedia</a
+      >
+      <button id="styleButton">EXPLORE MORE STYLES</button>
+    </div>
+
+    <script>
+      let user = prompt("Welcome! What's your name?");
+
+      if (user) {
+        alert(
+          "Thanks, " +
+            user +
+            "! We'll keep you in the loop with the latest trends in heels."
+        );
+      } else {
+        alert("No problem! Let's explore the world of court heels together.");
+      }
+
+      document
+        .getElementById("styleButton")
+        .addEventListener("click", function () {
+          alert(
+            "Walk confidently and stylishly, " + (user || "fashion lover") + "!"
+          );
+        });
+    </script>
+  </body>
+</html>
